@@ -27,6 +27,7 @@ trash
 .rvmrc
 .trashes
 *~
+.idea
 
 # Gatsby related
 .cache/
