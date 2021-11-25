@@ -11,6 +11,9 @@ header {
     background: url("../resources/images/header_background.png") no-repeat center center/cover;
 }
 
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -217,3 +220,50 @@ h1 {
 .button:hover {
     background: rgba(0, 0, 0, 0.25);
 }
+.partners .container {
+    background: rgb(1, 86, 166);
+    background: linear-gradient(90deg, rgba(1, 86, 166, 1) 0%, rgba(0, 200, 232, 1) 50%, rgba(1, 86, 166, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    padding: 75px 0;
+    box-sizing: border-box;
+}
+.partners .container h2{
+    font-size: 50px;
+}
+.partners .container .partners_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 70px;
+}
+.partner_logo img{
+    width: 250px;
+    height: auto;
+    transition:all 0.5s ease-in-out;
+}
+.partner_logo img:hover{
+    transform: scale(1.1);
+}
+.partners_list .arrow{
+    width: 70px;
+    height: auto;
+    transition:all 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.partners_list .arrow:nth-child(5){
+     transform: rotate(180deg);
+ }
+
+.partners_list .arrow:hover{
+    cursor: pointer;
+}
+.partners_list p{
+    text-align: center;
+    font-size: 24px;
+    width: 250px;
+}
+
