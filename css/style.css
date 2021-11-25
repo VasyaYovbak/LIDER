@@ -1,0 +1,13 @@
+/*Linear background*/
+/*background: rgb(1, 86, 166);*/
+/*background: linear-gradient(90deg, rgba(1, 86, 166, 1) 0%, rgba(0, 200, 232, 1) 50%, rgba(1, 86, 166, 1) 100%);*/
+
+body {
+    margin: 0;
+}
+
+header {
+    height: 700px;
+    background: url("../resources/images/header_background.png");
+}
+
