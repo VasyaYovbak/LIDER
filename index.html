@@ -6,6 +6,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
+<nav class="navigation">
+    <div class="container">
+        <a href="#">
+            <img src="resources/images/logo.png" alt="logo" class="logo">
+        </a>
+        <div class="nav_menu">
+            <div class="lang_menu">
+                <div class="selected_lang">
+                    Українська
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="ua">Українська</a>
+                    </li>
+                    <li>
+                        <a href="" class="en">English</a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="nav">
+                <a href="#" class="nav_close" onclick="toggleNav()">text</a>
+                <ion_icon name="close-outline" size="large"></ion_icon>
+                <div class="nav_links_container">
+                    <a href="#" class="nav__link">
+                        <span class="nav_text">Products</span>
+                        <ion_icon name="cube_outline" size="large"></ion_icon>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <span class="nav_text">Locations</span>
+                        <ion_icon name="location_outline" size="large"></ion_icon>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <span class="nav_text">Settings</span>
+                        <ion_icon name="settings_outline" size="large"></ion_icon>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <span class="nav_text">Contact Us</span>
+                        <ion_icon name="call_outline" size="large"></ion_icon>
+                    </a>
+                </div>
+            </nav>
+            <main class="main">
+                <a onclick="toggleNav()">Open Navigation</a>
+            </main>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="container">
+        <h1>Інститут Медико-Соціальних Ініціатив "ЛІДЕР"</h1>
+        <div class="buttons">
+            <a href="#" class="button">Центр 1</a>
+            <a href="#" class="button">Центр 2</a>
+        </div>
+    </div>
+</header>
+<script src="js/script.js"></script>
 </body>
 </html>
