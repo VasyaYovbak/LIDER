@@ -8,10 +8,218 @@ body {
 
 header {
     height: 700px;
-    background: url("../resources/images/header_background.png");
+    background: url("../resources/images/header_background.png") no-repeat center center/cover;
 }
 
 
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.navigation {
+    position: fixed;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.navigation .container {
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang_menu {
+    width: 125px;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    margin-right: 15px;
+}
+
+.lang_menu .selected_lang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang_menu .selected_lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../resources/images/ua.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lang_menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+.lang_menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang_menu ul li a {
+    text-decoration: none;
+    width: 140px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang_menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang_menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.visible {
+    display: inline-block!important;
+}
+
+.ua:before {
+    background-image: url("../resources/images/ua.png");
+}
+
+.en:before {
+    background-image: url("../resources/images/en.png");
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_open .nav {
+    transform: translateX(0);
+}
+
+.nav_open .nav {
+    transform: translateX(0);
+}
+
+.nav {
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #333333;
+    transform: translateX(350px);
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.nav_close {
+    background: none;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 15px 25px;
+    color: #dddddd;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav_close:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav_links-container {
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.nav_text {
+    font-size: 22px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+}
+
+.nav_link:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.main {
+    transition: transform 0.2s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    text-align: center;
+    width: 70%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.button {
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
 .partners .container {
     background: rgb(1, 86, 166);
     background: linear-gradient(90deg, rgba(1, 86, 166, 1) 0%, rgba(0, 200, 232, 1) 50%, rgba(1, 86, 166, 1) 100%);
@@ -58,18 +266,4 @@ header {
     font-size: 24px;
     width: 250px;
 }
-.logo div{
-    height: 250px;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    /*height: 450px;*/
-}
-
-
-
-
-
-
 

@@ -1,3 +1,4 @@
+
 const partners_logo_link = [
     "https://static.wixstatic.com/media/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png/v1/fill/w_1293,h_722,al_c/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png",
     "resources/images/lpnu_logo.png",
@@ -30,4 +31,15 @@ Arrows[0].addEventListener("click",()=>{
 Arrows[1].addEventListener("click",()=>{
     change_partners(1);
 })
-console.log(1)
+
+
+function toggleNav() {
+    document.body.classList.toggle("nav_open");
+}
+
+const language = document.querySelector(".lang_menu");
+const lang_list = document.querySelector("ul");
+language.addEventListener("click", ()=>{
+    lang_list.classList.toggle("visible");
+})
+
