@@ -1,11 +1,12 @@
-
+import "../scss/style.scss";
 const partners_logo_link = [
     "https://static.wixstatic.com/media/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png/v1/fill/w_1293,h_722,al_c/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png",
     "resources/images/lpnu_logo.png",
     "https://i.pinimg.com/originals/15/b1/46/15b146e36609936e0d3336a1f4265770.png",
     "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
 ]
-let current_partner_index = [0, 1, 2]
+let current_partner_index = [0, 1, 2];
+
 const partners_logo = document.querySelectorAll(".partner_logo")
 function change_partners(direction) {
     for (let i = 0;i<current_partner_index.length;i++) {
@@ -15,7 +16,7 @@ function change_partners(direction) {
         current_partner_index[i] = (current_partner_index[i] + direction) % partners_logo_link.length;
     }
     for (let i = 0; i < partners_logo.length; i++) {
-        image = document.createElement("img")
+        let image = document.createElement("img")
         image.setAttribute("src",  partners_logo_link[current_partner_index[i]])
         partners_logo[i].innerHTML = ""
         partners_logo[i].append(image)

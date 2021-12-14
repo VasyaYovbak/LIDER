@@ -7,12 +7,9 @@ body {
 }
 
 header {
-    height: 700px;
+    height: 100vh;
     background: url("../resources/images/header_background.png") no-repeat center center/cover;
 }
-
-
-
 
 * {
     box-sizing: border-box;
@@ -36,7 +33,7 @@ a {
     top: 0;
     right: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .navigation .container {
@@ -220,6 +217,18 @@ h1 {
 .button:hover {
     background: rgba(0, 0, 0, 0.25);
 }
+
+
+.mission .container{
+    padding-top: 20px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.mission .container h2{
+    font-size: 40px;
+}
+
 .partners .container {
     background: rgb(1, 86, 166);
     background: linear-gradient(90deg, rgba(1, 86, 166, 1) 0%, rgba(0, 200, 232, 1) 50%, rgba(1, 86, 166, 1) 100%);
@@ -229,6 +238,7 @@ h1 {
     gap: 120px;
     padding: 75px 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 .partners .container h2{
     font-size: 50px;
