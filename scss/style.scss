@@ -7,15 +7,35 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 75px;
   height: 100vh;
   background: url("../resources/images/header_background.png") no-repeat center center/cover;
-
   .container {
-    text-align: center;
-    width: 70%;
+    height: 100%;
+    display: flex;
+    .institute{
+      width: 40%;
+      display: flex;
+    }
+    .abbreviation{
+      width: 35%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 75px;
+      p{
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        span{
+          color: red;
+          font-size: 24px;
+        }
+      }
+    }
   }
 }
 
@@ -39,19 +59,51 @@ a {
 
 .navigation {
   position: fixed;
-  padding: 10px 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   top: 0;
   right: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255,1);
 
-  .container {
-    width: 67%;
+  .container:nth-child(1){
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 65%;
+    padding-top: 2px;
+    p{
+      text-align: center;
+      font-size: 24px;
+      width: 380px;
+      margin: 0;
+      padding-top: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    img{
+      margin-right: 225px;
+
+    }
+  }
+  .container:nth-child(2){
+    background:rgba(1, 86, 166, 1);
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+    p{
+      width: 150px;
+      color: white;
+      font-size: 18px;
+      padding: 0;
+      margin: 14px 0;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-align: center;
+    }
   }
 }
 
