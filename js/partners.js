@@ -7,6 +7,7 @@ class Partners {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"];
         this.current_partner_index = [0, 1, 2];
     }
+
     change_partners(direction) {
         const partners_logo = document.querySelectorAll(".partner_logo");
         for (let i = 0; i < this.current_partner_index.length; i++) {
@@ -22,7 +23,8 @@ class Partners {
             partners_logo[i].append(image)
         }
     }
-    addListenerToArrow(){
+
+    addListenerToArrow() {
         const Arrows = document.querySelectorAll(".arrow")
         Arrows[0].addEventListener("click", () => {
             this.change_partners(-1);
@@ -32,6 +34,7 @@ class Partners {
         })
     }
 }
+
 export {Partners}
 
 
