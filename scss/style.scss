@@ -239,3 +239,42 @@ header {
     }
   }
 }
+
+.partners {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(220,238,255,1) 83%);
+  padding-bottom: 20px;
+  .container {
+    padding-top: 30px;
+    .partners_header {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 50px;
+      p {
+        display: inline-block;
+        font-size: 32px;
+      }
+      img {
+        width: 80px;
+      }
+
+    }
+    .partners-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+      grid-auto-rows: auto;
+      width: 64%;
+      margin: 0 auto;
+      img{
+        width: 165px;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+  }
+}

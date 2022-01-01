@@ -4,7 +4,7 @@ class Partners {
             "https://static.wixstatic.com/media/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png/v1/fill/w_1293,h_722,al_c/00af0b_1b61b582da7d430b9b7a111c78f3371a~mv2.png",
             "resources/images/lpnu_logo.png",
             "https://i.pinimg.com/originals/15/b1/46/15b146e36609936e0d3336a1f4265770.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"];
+            "`https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png`"];
         this.current_partner_index = [0, 1, 2];
     }
 
