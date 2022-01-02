@@ -20,4 +20,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
     })
-});
+
+    const links = document.querySelectorAll(".nav_menu ul li a");
+
+    for (const link of links) {
+        link.addEventListener("click", clickHandler);
+    }
+    document.getElementById("logo").addEventListener("click", clickHandler);
+
+    function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        scroll({
+            top: offsetTop - 80,
+            behavior: "smooth"
+        });
+    }
+})
+
+
