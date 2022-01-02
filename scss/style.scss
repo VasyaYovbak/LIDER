@@ -221,6 +221,7 @@ header {
 
     .left-box {
       padding-left: 50px;
+      padding-right: 5%;
       background: rgb(141, 192, 240);
       background: -moz-linear-gradient(45deg, rgba(141,192,240,1) -400%, rgba(255, 255, 255, 1) 100%);
       background: -webkit-linear-gradient(45deg, rgba(141,192,240,1) -400%, rgba(255, 255, 255, 1) 100%);
@@ -230,6 +231,7 @@ header {
 
     .right-box {
       padding-right: 50px;
+      padding-left: 5%;
       text-align: right;
       background: rgb(141, 192, 240);
       background: -moz-linear-gradient(320deg, rgba(141,192,240,1) -400%, rgba(255, 255, 255, 1) 100%);
@@ -241,50 +243,79 @@ header {
 }
 
 .values {
+  display: flex;
+  align-items: center;
+  height: 340px;
+  position: relative;
   z-index: 1;
+  box-sizing: border-box;
   padding: 30px 0;
   text-align: center;
-  box-shadow: 0 0 27px 14px rgba(135, 159, 255, 1);
+  box-shadow: 0 0 35px 20px rgba(141, 192, 240, 0.3);
+  background: rgb(227, 227, 227);
+  background: -moz-linear-gradient(320deg, rgba(227, 227, 227, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(320deg, rgba(227, 227, 227, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(320deg, rgba(227, 227, 227, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3e3", endColorstr="#ffffff", GradientType=1);
+
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 200px;
 
     div {
-      width: 45%;
+      width: 40%;
+
+      h2 {
+        color: rgb(1, 86, 165);
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+      }
     }
   }
 }
 
 .partners {
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(220,238,255,1) 83%);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 4%, rgba(220, 238, 255, 1) 83%);
   padding-bottom: 20px;
+
   .container {
     padding-top: 30px;
+
     .partners_header {
       display: flex;
       justify-content: center;
       gap: 20px;
       align-items: center;
       margin-bottom: 50px;
+
       p {
         display: inline-block;
         font-size: 32px;
       }
+
       img {
         width: 80px;
       }
 
     }
-    .partners-container{
+
+    .partners-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
       grid-auto-rows: auto;
       width: 64%;
       margin: 0 auto;
-      img{
+
+      img {
         width: 165px;
         height: auto;
         align-self: center;
