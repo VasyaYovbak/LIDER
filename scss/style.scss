@@ -180,16 +180,16 @@ header {
       height: 450px;
 
       h3 {
-        height: 35%;
+        height: 25%;
         color: rgb(1, 86, 165);
-        margin: 0;
+        margin: 40px 0 0 0;
         padding: 0;
         font-weight: 500;
         font-size: 36px;
       }
 
       .centres_description {
-        height: 40%;
+        height: 35%;
         color: #000;
         font-size: 20px;
         font-family: 'Ubuntu', sans-serif;
@@ -247,8 +247,7 @@ header {
   align-items: center;
   position: relative;
   z-index: 1;
-  box-sizing: border-box;
-  padding: 30px 0;
+  padding: 60px 0;
   text-align: center;
   box-shadow: 0 0 35px 20px rgba(141, 192, 240, 0.3);
   background: rgb(227, 227, 227);
@@ -259,6 +258,7 @@ header {
 
   h2 {
     color: rgb(1, 86, 165);
+    font-weight: 500;
     font-size: 30px;
   }
 
@@ -272,6 +272,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 60px;
 
   }
 
@@ -327,9 +328,11 @@ header {
     background: linear-gradient(45deg, rgb(255, 255, 255), rgb(235, 238, 238));
 
     h2 {
+      color: rgb(1, 86, 165);
       text-align: center;
-      font-size: 34px;
-      font-weight: 400;
+      padding: 0;
+      font-weight: 500;
+      font-size: 36px;
     }
 
     .card {
@@ -382,7 +385,7 @@ header {
 .partners {
   background: rgb(255, 255, 255);
   background: radial-gradient(circle, rgba(255, 255, 255, 1) 4%, rgba(220, 238, 255, 1) 83%);
-  padding-bottom: 20px;
+  padding-bottom: 100px;
 
   .container {
     padding-top: 30px;
@@ -396,7 +399,9 @@ header {
 
       p {
         display: inline-block;
-        font-size: 32px;
+        color: rgb(1, 86, 165);
+        font-weight: 500;
+        font-size: 36px;
       }
 
       img {
@@ -421,5 +426,100 @@ header {
       }
     }
 
+  }
+}
+
+footer {
+  height: 350px;
+  background: #03529b;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+
+    .contacts {
+      .contacts_desc {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 17px;
+      color: white;
+      font-weight: 300;
+
+      a {
+        font-size: 17px;
+        color: white;
+        font-weight: 300;
+      }
+    }
+
+    .feedback {
+      .feedback_desc {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .input_wrap {
+        border-bottom: 1px solid #fff;
+        position: relative;
+        width: 220px;
+
+        input {
+          height: 30px;
+          width: 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          font-size: 16px;
+          overflow: visible;
+          color: white;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 300;
+          padding: 2px 0;
+        }
+
+        input::placeholder {
+          color: lightgray;
+        }
+      }
+
+      button {
+        height: 45px;
+        display: flex;
+        width: 140px;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #fff;
+        background-position: left;
+        border: 1px solid #fff;
+        line-height: 1.2;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: transparent;
+      }
+    }
   }
 }

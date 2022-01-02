@@ -23,26 +23,26 @@
     <div class="container">
         <ul class="nav_main">
             <li class="nav_logo">
-                <a href="#"><img src="/resources/images/logo-white.png" alt=""></a>
+                <a href="#header" id="logo"><img src="/resources/images/logo-white.png" alt=""></a>
             </li>
             <li class="nav_menu">
                 <ul>
-                    <li><a href="#">Центри</a></li>
-                    <li><a href="#">Наші цінності</a></li>
-                    <li><a href="#">Партнери</a></li>
-                    <li><a href="#">Про підтримку</a></li>
+                    <li><a href="#centres">Центри</a></li>
+                    <li><a href="#values">Цінності</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#partners">Партнери</a></li>
                 </ul>
             </li>
             <li class="nav_lang">
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>UA</li>
+                    <li>EN</li>
                 </ul>
             </li>
         </ul>
     </div>
 </nav>
-<header>
+<header id="header">
     <div class="header_right_hand">
         <div class="header_right_inner mouse" data-speed="2">
             <img id="img_right_hand" class="img_right_hand img_hand fade" src="resources/images/hand.png" alt="">
@@ -61,11 +61,6 @@
         <h1>Інститут Медико-Соціальних Ініціатив <br><span>"ЛІДЕР"</span></h1>
     </div>
 </header>
-<section id="about" class="about">
-    <div class="container">
-
-    </div>
-</section>
 <section id="centres" class="centres">
     <div class="centres_wrap">
         <div class="centres_box left-box">
@@ -79,7 +74,7 @@
         </div>
         <div class="centres_border"></div>
         <div class="centres_box right-box">
-            <h3>Центр профілактики інфекційних хвороб та зниження негативних наслідків від них</h3>
+            <h3>Центр профілактики інфекцій</h3>
             <p class="centres_description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, delectus explicabo fuga maiores molestias
                 nobis pariatur quae recusandae sunt tempore unde, voluptatibus! Consequatur eveniet magni natus,
@@ -89,8 +84,7 @@
         </div>
     </div>
 </section>
-
-<section class="values">
+<section class="values" id="values">
     <div class="container">
         <div class="values-wrapper">
             <div class="mission">
@@ -182,7 +176,6 @@
         </div>
     </div>
 </section>
-
 <section class="partners" id="partners">
     <div class="container">
         <div class="partners_header">
@@ -209,6 +202,26 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="contacts">
+            <p class="contacts_desc">Контакти</p>
+            <p>
+                36020, м. Полтава, <br>
+                вул. Гоголя, 12, офіс 501
+            </p>
+            <a href="#">+38 (094) 963 24 85</a>
+            <a href="#">mail@lider.org.ua</a>
+        </div>
+        <form action="#" class="feedback">
+            <p class="feedback_desc">Зворотній зв'язок</p>
+            <div class="input_wrap"><input type="text" placeholder="Ім'я"></div>
+            <div class="input_wrap"><input type="email" placeholder="Пошта"></div>
+            <div class="input_wrap"><input type="tel" placeholder="Телефон"></div>
+            <button>Надіслати</button>
+        </form>
+    </div>
+</footer>
 <script src="js/header_animations.js"></script>
 </body>
 </html>
