@@ -156,7 +156,7 @@ header {
 
 .centres {
   overflow: hidden;
-  height: 450px;
+  height: max-content;
   width: 100%;
 
   .centres_wrap {
@@ -164,7 +164,7 @@ header {
 
     .centres_border {
       width: 1.5px;
-      height: 450px;
+      height: 100%;
       background: rgb(255, 255, 255);
       background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(141, 192, 240, 1) 50%, rgba(255, 255, 255, 1) 100%);
       background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(141, 192, 240, 1) 50%, rgba(255, 255, 255, 1) 100%);
@@ -177,10 +177,9 @@ header {
       box-sizing: border-box;
       padding: 20px 20px 100px 20px;
       width: 49.9vw;
-      height: 450px;
 
       h3 {
-        height: 25%;
+        height: 15vh;
         color: rgb(1, 86, 165);
         margin: 40px 0 0 0;
         padding: 0;
@@ -188,16 +187,24 @@ header {
         font-size: 36px;
       }
 
+      .centres_header{
+        font-size: 25px;
+        margin: 0;
+        color: #4a51e6;
+      }
+
       .centres_description {
-        height: 35%;
         color: #000;
         font-size: 20px;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
+        list-style-type: circle;
+        li{
+          margin: 10px 0 ;
+        }
       }
 
       .centres_find {
-        position: absolute;
         border: 1px solid red;
         width: 220px;
         height: 55px;
@@ -208,14 +215,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-
-      .left_btn {
-        left: 50px;
-      }
-
-      .right_btn {
-        right: 50px;
+        margin-top: 20px;
+        margin-left: auto;
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
       }
     }
 
@@ -232,7 +236,7 @@ header {
     .right-box {
       padding-right: 50px;
       padding-left: 5%;
-      text-align: right;
+      text-align: left;
       background: rgb(141, 192, 240);
       background: -moz-linear-gradient(320deg, rgba(141,192,240,1) -400%, rgba(255, 255, 255, 1) 100%);
       background: -webkit-linear-gradient(320deg, rgba(141,192,240,1) -400%, rgba(255, 255, 255, 1) 100%);
@@ -430,7 +434,7 @@ header {
 }
 
 footer {
-  height: 350px;
+  height: 200px;
   background: #03529b;
 
   .container {
@@ -465,60 +469,30 @@ footer {
     }
 
     .feedback {
-      .feedback_desc {
-        font-size: 20px;
-        color: white;
-        font-weight: bold;
-      }
-
+      height: 45px;
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      width: 200px;
+      font-size: 16px;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #fff;
+      background-position: left;
+      border: 1px solid #fff;
+      line-height: 1.2;
+      -webkit-transition: all .2s;
 
-      .input_wrap {
-        border-bottom: 1px solid #fff;
-        position: relative;
-        width: 220px;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-color: transparent;
+      transition: all 0.5s ease-in-out;
 
-        input {
-          height: 30px;
-          width: 100%;
-          background: transparent;
-          outline: none;
-          border: none;
-          font-size: 16px;
-          overflow: visible;
-          color: white;
-          font-family: 'Ubuntu', sans-serif;
-          font-weight: 300;
-          padding: 2px 0;
-        }
-
-        input::placeholder {
-          color: lightgray;
-        }
-      }
-
-      button {
-        height: 45px;
-        display: flex;
-        width: 140px;
-        font-size: 16px;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        color: #fff;
-        background-position: left;
-        border: 1px solid #fff;
-        line-height: 1.2;
-        -webkit-transition: all .2s;
-        transition: all .2s;
-        border-radius: 50px;
-        cursor: pointer;
-        text-align: center;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        background-color: transparent;
+      &:hover{
+        color: #03529b;
+        background: white;
       }
     }
   }
