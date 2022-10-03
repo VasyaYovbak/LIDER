@@ -415,10 +415,10 @@ header {
     }
 
     .partners-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 5px;
-      grid-auto-rows: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
       width: 64%;
       margin: 0 auto;
 
