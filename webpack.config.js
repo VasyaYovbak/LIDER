@@ -7,7 +7,7 @@ module.exports = {
     entry: './src/js/index.js',
     devtool: 'source-map',
     output: {
-        path: __dirname+'/dist/',
+        path: __dirname + '/dist/',
         publicPath: "",
         filename: 'bundle.js'
     },
@@ -45,12 +45,7 @@ module.exports = {
         filename: 'styles.css'
     }), new HtmlWebPackPlugin({
         template: "./src/index.html",
-        filename: "index.html"
+        filename: "/index.html"
     })
     ],
-    devServer: {
-        inline: true,
-        contentBase: './dist',
-        port: 5000
-    }
 };

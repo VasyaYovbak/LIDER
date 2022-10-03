@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "webpack serve",
     "start": "node server.js",
-    "build": "webpack --mode production",
-    "heroku-postbuild": "webpack"
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "css-loader": "^6.5.1",
