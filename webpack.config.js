@@ -4,11 +4,11 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: 'development',
-    entry: './js/index.js',
+    entry: './src/js/index.js',
     devtool: 'source-map',
     output: {
-        path: __dirname,
-        publicPath: '/',
+        path: __dirname+'/dist/',
+        publicPath: "/",
         filename: 'bundle.js'
     },
     module: {
@@ -44,8 +44,13 @@ module.exports = {
     plugins: [new MiniCssExtractPlugin({
         filename: 'styles.css'
     }), new HtmlWebPackPlugin({
-        template: "./index.html",
+        template: "./src/index.html",
         filename: "index.html"
     })
-    ]
+    ],
+    devServer: {
+        inline: true,
+        contentBase: './dist',
+        port: 5000
+    }
 };
