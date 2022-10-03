@@ -12,6 +12,7 @@
     "css-loader": "^6.5.1",
     "express": "^4.18.1",
     "mini-css-extract-plugin": "^2.4.5",
+    "html-webpack-plugin": "^5.5.0",
     "sass": "^1.45.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
