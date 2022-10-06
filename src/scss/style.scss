@@ -422,13 +422,12 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
+      gap: 20px;
       width: 64%;
       margin: 0 auto;
 
       img {
-        width: 165px;
-        height: auto;
+        height: 200px;
         align-self: center;
         justify-self: center;
       }
